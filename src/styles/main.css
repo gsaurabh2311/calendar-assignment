@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2D2727;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+}
+
+.calendar {
+  border: 2px solid gray;
+  width: 298px;
+}
+
+.calendar .first-row {
+  display: flex;
+  justify-content: flex-end;
+  background: white;
+  border-bottom: 2px solid gray;
+  padding-right: 5px;
+}
+
+.calendar .first-row p {
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.calendar .first-row p:last-child {
+  margin-left: 3px;
+}
+.calendar .second-row {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+}
+.calendar .second-row p.days {
+  font-size: 20px;
+}
+.calendar .second-row p {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 14px;
+}
+.calendar .second-row p.selected {
+  background: crimson;
+  color: white;
+}
